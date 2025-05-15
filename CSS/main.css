@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+:root{
+
+}
+
+.body{
+    font-family: "system-ui", sans-serif;
+}
+
+.main-bg-color{
+    background-color: #0D0D0D
+}
+
+.layer-bg-color{
+   background-color: #F4EFEC;
+}
+
+
+.container{
+    @apply mx-auto w-[95%] max-w-[1800px] py-7;
+}
+
+.row{
+    @apply flex flex-wrap gap-4;
+}
+
+.meal:hover div{
+    top: 0;
+}

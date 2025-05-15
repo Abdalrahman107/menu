@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js" integrity="sha512-FPlUpimug7gt7Hn7swE8N2pHw/+oQMq/+R/hH/2hZ43VOQ+Kjh25rQzuLyPz7aUWKlRpI7wXbY6+U3oFPGjPOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="relative">
+
+    <div class="loader absolute top-0 left-0 right-0 bottom-0 hidden justify-center items-center main-bg-color z-50 h-screen">
+        <i class="fa-solid fa-spinner fa-spin text-9xl text-white" ></i>
+    </div>
+
+
+    <!-- Sidebar -->
+    <aside class="side-bar fixed -left-[250px] top-0 z-20 min-h-screen  w-[300px] flex transition-all duration-500 ">
+        <div class="w-[250px] main-bg-color text-white flex flex-col justify-between overflow-hidden">
+            <ul class="absolute p-6 side-menu translate-y-full opacity-0  transition-all duration-500 overflow-hidden">
+                <li class=" py-2">
+                    <button class="search-btn cursor-pointer text-white">Search</button>
+                </li>
+                <li class=" py-2">
+                    <button class="categories-btn cursor-pointer text-white">Categories</button>
+                </li>
+                <li class=" py-2">
+                    <burron class="area-btn cursor-pointer text-white">Area</burron>
+                </li>
+                <li class="py-2">
+                    <button class="Ingredients-btn cursor-pointer text-white">Ingredients</button>
+                </li>
+                <li class="py-2">
+                    <button class="Contact Us-btn cursor-pointer text-white">Contact Us</button>
+                </li>
+            </ul>
+            <footer class="fixed bottom-0 w-[250px] p-6">
+                <div>
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-solid fa-globe"></i></span>
+                </div>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </footer>
+        </div>
+        <div class="w-[50px] bg-white flex flex-col justify-between items-center p-6 text-2xl">
+            <div class="w-[40px]"><img src="./images/logo.png" class="" alt=" logo"></div>
+            <div>
+                 <button class="cursor-pointer close-menu hidden"><i class="fa-solid fa-x"></i></button> 
+                 <button class="cursor-pointer open-menu"><i class="fa-solid fa-bars"></i></button> 
+            </div>
+            <div class="">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+    </aside>
+
+
+
+    <main class="main-bg-color min-h-screen">
+        <div class="container">
+        
+        <!-- all meals -->
+        <div class="meals grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        </div>
+
+
+        <!-- meals details -->
+        <div class="meal-details items-start gap-4 hidden">
+
+        </div>
+
+
+        <!-- search page -->
+        <div class="search-page hidden">
+            <div class="flex items-center justify-around gap-6 w-5/6 mx-auto">
+
+            <input type="text" class="text-white search-name px-3 py-1 border border-gray-600 w-full md:w-1/2 outline-0  focus:border-blue-300 transition-border duration-500 placeholder:text-gray-300" placeholder="Search by name...">
+            <input type="text" class="text-white search-letter px-3 py-1 border border-gray-600 w-full md:w-1/2 outline-0  focus:border-blue-300 transition-border duration-300 placeholder:text-gray-300" placeholder="Search by letter...">
+
+            </div>
+            <div class="results grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-6">
+
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./JS/index.js"></script>
+    
+</body>
+</html>
